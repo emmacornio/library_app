@@ -1,0 +1,108 @@
+body {
+	min-height: 100vh;
+	min-width: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	margin: 0;
+}
+.header {
+	background-color: #b89d74;
+	display: flex;
+	justify-content: center;
+}
+.main {
+	flex-grow: 1;
+	display: flex;
+	align-self: stretch;
+	display: flex;
+	justify-content: stretch;
+}
+.side-bar {
+	flex: 0.5;
+	background-color: hsl(36, 32%, 30%);
+	display: flex;
+	flex-flow: column nowrap;
+	/* justify-content: center; */
+	align-items: center;
+}
+.library-display {
+	flex: 3;
+
+	width: 70%;
+	background-color: hsl(36, 32%, 70%);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: start;
+	gap: 1rem;
+	padding: 2rem;
+	/* margin: 2rem; */
+}
+.book {
+	padding: 1rem;
+	border-radius: 30px;
+	border-style: solid;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width: 250px;
+}
+.book > p {
+	margin: 3px;
+	align-self: center;
+}
+.book > button {
+	align-self: center;
+	width: 5rem;
+	background-color: #f1b856;
+	border-style: none;
+	border-radius: 5px;
+}
+.new-book-form {
+	/* transition: 0.25s; */
+	width: auto;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	border-color: #b89d74;
+	border-style: solid;
+	border-radius: 5px;
+	background-color: hsl(36, 32%, 70%);
+}
+.footer {
+	flex: 0 0 0;
+	margin: 0px;
+	justify-content: center;
+	align-content: center;
+	background-color: #b89d74;
+}
+.links {
+	margin: 1rem;
+	padding: 0px;
+}
+.links li {
+	list-style: none;
+	text-align: center;
+}
+a {
+	color: black;
+}
+.add-book-btn {
+	border-radius: 100%;
+	border: 0.1px solid hsl(36, 32%, 30%);
+	background-color: #2a8279;
+	color: white;
+	width: 2rem;
+	height: 2rem;
+	display: block;
+	margin-top: 1rem;
+}
+.book,
+.read {
+	background-color: #7f9bab;
+}
+.book.not-read {
+	background-color: #cc5e5e;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Library</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<script src="./script.js" defer></script>
+	</head>
+	<body>
+		<header class="header"><h1>Library</h1></header>
+		<main class="main">
+			<div class="side-bar">
+				<button id="newBookBtn" class="add-book-btn">
+					<a title="Press to add a book">+</a>
+				</button>
+				<section id="newBookForm" class="new-book-form">
+					<div>
+						<div>
+							<label for="title">Title of the book.</label><br />
+							<input
+								type="text"
+								name="title"
+								class="input"
+								id="titleInput"
+								placeholder="Title"
+							/><br />
+							<label for="author">Author of the book</label><br />
+
+							<input
+								type="text"
+								class="input"
+								name="author"
+								id="authorInput"
+								placeholder="Author"
+							/><br />
+							<label for="pages">Number of pages</label><br />
+							<input
+								type="number"
+								name="pages"
+								class="input"
+								id="pagesInput"
+								placeholder="Number of pages"
+							/><br />
+							<label for="read">Have you read this book</label>
+							<br /><select name="read" id="readStatusInput">
+								<option value="yes">Yes</option>
+								<option value="no">No</option>
+							</select>
+							<br />
+							<button id="addBookBtn">Add new Book!</button>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="library-display" id="display"></div>
+		</main>
+		<footer class="footer">
+			<ul class="links">
+				<li>
+					<a href="https://github.com/emmacornio/library_app">Source Code</a>
+				</li>
+				<li>
+					This is a Project form
+					<a
+						href="https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/library"
+						>The Odin Project</a
+					>
+					Curriculum
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>
