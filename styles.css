@@ -6,6 +6,7 @@ body {
 	justify-content: center;
 	box-sizing: border-box;
 	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
 .header {
 	background-color: #b89d74;
@@ -89,6 +90,9 @@ body {
 a {
 	color: black;
 }
+a:hover {
+	color: white;
+}
 .add-book-btn {
 	border-radius: 100%;
 	border: 0.1px solid hsl(36, 32%, 30%);
@@ -99,10 +103,22 @@ a {
 	display: block;
 	margin-top: 1rem;
 }
+button:hover {
+	cursor: pointer;
+}
+.add-book-btn:hover {
+	background-color: hsl(174, 70%, 50%);
+	border: 1px black solid;
+}
+
 .book,
 .read {
 	background-color: #7f9bab;
 }
 .book.not-read {
 	background-color: #cc5e5e;
+}
+.book > button:hover {
+	background-color: hsl(38, 100%, 80%);
+	border: 1px solid black;
 }
